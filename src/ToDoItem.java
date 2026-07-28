@@ -5,4 +5,22 @@ public class ToDoItem {
     // TODO Now:
     // Add a constructor to initialize the item with the description, and isDone as false, with a single parameter for the description
     // Add getters and setters for each field
+
+    public void setIsDone(Boolean isDone) {
+        this.isDone = isDone;
+    }
+
+    public Boolean getIsDone() {
+        return this.isDone;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getDescription() {
+        return this.description;
+    }
+
+
 }
