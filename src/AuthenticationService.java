@@ -18,7 +18,8 @@ public AuthenticationService() {
                 return null;
             }
         }
-       User newUser = new User(username, password);
+
+        User newUser = new User(username, password);
         users.add(newUser);
         return newUser;
     }
