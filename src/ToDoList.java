@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ToDoList {
     private User user;
     private boolean isRunning;
@@ -72,7 +74,7 @@ public class ToDoList {
     public void onShowAllItems() {
         for (int i = 0; i < user.getToDoItems().size(); i++) {
             ToDoItem item = user.getToDoItems().get(i);
-            if (item.isDone()) {
+            if (item.getIsDone()) {
                 System.out.println(i + ". [X] " + item.getDescription());
             } else {
                 System.out.println(i + ". [ ] " + item.getDescription());
